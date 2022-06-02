@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+:root{
+  --color--min: #4468E2;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--color--min);
+}
+.container{
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ******** header ********** */
+header{
+  position: fixed;
+  background: white;
+  z-index: 999;
+  width: 100%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav > .logo_site{
+  display: flex;
+  align-items: center;
+}
+nav > .navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+nav > .navbar >  .nav-item > a{
+  opacity: 50%;
+}
+nav > .navbar > .nav-item > .active{
+  opacity: 100%;
+}
+nav > .navbar > .nav-item:hover > a{
+  opacity: 100%;
+}
+nav > .nav_con{
+  background: #4468E2;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+/* ************** Home loding ******************** */
+.home_loding{
+  color: white;
+  height: calc(90vh + 50px);
+  border-radius: 25px;
+  background-image: url("../img/lalo-hernandez-Amo081zdJsI-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home_loding > .container{
+  opacity: 75%;
+  background: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  border-radius: 25px;
+  flex-direction: column;
+}
+.home_loding .text_home_loding{
+  width: 507px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.home_loding .box_home_loding{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 750px;
+  background: linear-gradient(274deg ,#5d8fff, #ffffff);
+  color: black;
+  border-radius: 20px;
+}
+.home_loding .box_home_loding > button{
+  width: 183px;
+  height: 63px;
+  background: var(--color--min);
+  border: 0;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+/* ************** about ******************** */
+.about{
+  margin: 100px 0;
+}
+.about > .container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 50px;
+}
+.about > .container > .about_box{
+  box-shadow: 14px 14px 44px 11px #efefef;
+  border-radius: 15px;
+  padding: 15px;
+}
+.about > .container > .about_box > .img{
+  width: 103px;
+  height: 97px;
+  background: #F0F4FC;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* *************  places  **************** */
+.places{
+  background: url('../img/Group 39709.png') no-repeat scroll;
+  background-size: cover;
+}
+.places > .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.places > .container > .btns_places{
+  border-bottom: 3px solid #e8e8e8;
+  margin: 20px;
+}
+.places > .container > .btns_places > .btn_place{
+  border: 0;
+  margin: 25px 35px;
+  background: none;
+  position: relative;
+}
+.places > .container > .btns_places > .btn_place::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: -28px;
+  transition: all 0.5s ease-in-out;
+}
+.places > .container > .btns_places > .active::before{
+  width: 100%;
+}
+.places > .container > .btns_places > .btn_place:hover::before{
+  width: 100%;
+}
+.places > .container > .places_box > .row_places{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 50px;
+  margin-bottom: 100px;
+}
+.places > .container > .places_box > .row_places > .place{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.places > .container > .places_box > .row_places > .place > h3{
+  font-size: 25px;
+}
+.places > .container > .places_box > .row_places > .place > p{
+  overflow: hidden;
+  height: 19px;
+}
+.places > .container > .places_box > .row_places > .place > .place_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* **************** Blogs **************** */
+.blogs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogs > .blogs_box{
+  display: flex;
+  margin: 25px 0 100px 0;
+  width: 1160px;
+  justify-content: space-between;
+}
+.blogs > .blogs_box > .blog_1{
+  background-image: url("../img/NoPath.png");
+  background-size: cover;
+  width: 115%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.blogs > .blogs_box > .blogs_2{
+  width: 85%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogs > .blogs_box > .blogs_2 > .blog_1{
+  background-image: url("../img/eva-darron-oCdVtGFeDC0-unsplash.png");
+  background-size: cover;
+  border-radius: 30px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.blogs > .blogs_box > .blogs_2 > .blog_2{
+  background-image: url("../img/ibrahim-rifath-Y6tBl0pTe-g-unsplash.png");
+  background-size: cover;
+  border-radius: 30px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+/* ********** customers ************** */
+.customers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customers > .customers_box{
+  display: flex;
+  margin: 20px 0 100px;
+}
+.customers > .customers_box > .customer{
+  display: flex;
+  flex-direction: column;
+}
+.customers > .customers_box > .customer > .customer_top{
+  display: flex;
+  width: 85%;
+}
+.customers > .customers_box > .customer > .customer_down{
+  display: flex;
+  align-items: center;
+  margin-left: 54px;
+}
+.customers > .customers_box > .customer > .customer_down > img{
+  width: 50px;
+  height: 50px;
+  
+}
+.customers > .customers_box > .customer > .customer_down > div{
+  margin-left: 20px;
+}
+.customers > .customers_box > .customer > .customer_down > div > span{
+  font-size: 19px;
+  font-weight: 600;
+}
+.customers > .customers_box > .customer > .customer_down > div > p{
+  margin: 0;
+  font-size: 14px;
+}
+/* ************** connect ******************** */
+.connect {
+  display: flex;
+  justify-content: space-between;
+  background: #E1E8F8;
+  align-items: center;
+  padding: 20px 30px;
+}
+.connect > .icon_socil > a > img {
+  height: 40px;
+  width: 40px;
+}
